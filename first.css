@@ -1,0 +1,128 @@
+
+body {
+    background:linear-gradient(180deg,#FFCCCC,#CCFFFF);
+    margin:0;
+    
+}
+
+/*This is for the title area at top of page */
+
+.title-area {
+    text-align:center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:solid black 5px;
+    border-radius: 15px;
+    padding: 10px;
+    margin:1em;
+}
+
+
+/* Style for the nav bar */
+.top-nav {
+    background-color: #333;
+    overflow:hidden;
+    border-radius:10px;
+    margin:1em;
+    margin-top:-1em;
+} 
+
+/* Styles the links inside the nav bar */
+
+.top-nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+
+}
+
+/* Changes the color of links when mouse hovers */
+.top-nav a:hover {
+    background-color: rgb(206,110,150);
+    color:rgb(245, 237, 240);
+}
+
+/* Adds color to the active link */
+.top-nav a.active {
+    background-color: #e021b7;
+    color:white;
+}
+
+
+
+.info-section {
+    display: flex;
+    border:solid black 5px;
+    border-radius: 20px;
+    margin-top:5px;
+    margin: 1em;
+    text-align:center;
+    align-items:center;
+    padding:10px;
+}
+
+ div.info-section ::first-letter{
+    font-size: 2em;
+}
+
+/* This is for the form */
+.flex-form {
+    background:linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    display:flex;
+    flex-direction: column; /*stacks the flex items(user inputs) from top to bottom */
+    width: 50%;
+    align-items: center;  
+    text-align: center;
+    margin-top: -3em;
+    margin-left: auto;  
+    margin-right:auto;
+    border-radius: 25px; 
+    border: solid black .5em;
+    padding:5px;
+    box-shadow: -24px -16px 6px -4px  rgba(0, 0, 0, .75) ;
+    
+}
+
+.label {
+    display: inline-block;
+}
+
+
+
+/* This creates a block button for users to click to submit */
+/*Add this to bottom of form */
+.block-button {
+    display:inline-block;
+    border: solid;
+    border-radius: 15px;
+    background-color: #FFCCCC;
+    padding: 1em 2em;
+    font-size: 16px;
+    cursor: pointer;
+    text-align:center;
+    margin-left:auto ;
+    margin-right: auto;
+}
+.block-button:hover {
+    animation-name:'colors';
+    animation-duration:2s;
+    animation-fill-mode:forwards; /*Keeps last color in animation*/
+}
+
+@keyframes colors {
+    0% {
+        background-color:pink;
+    }
+    50% {
+        background-color:#CCFFFF;
+    }
+    100% {
+        background-color: rgb(250,208,124);
+    }
+}
+
+
+/**** #### MOBILE ### */
+
